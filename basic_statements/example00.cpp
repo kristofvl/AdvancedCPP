@@ -7,7 +7,7 @@ int main() {
   auto i = 7;    // what type is variable i?
   auto j = 9.0;  // what type is variable j?
  
-  bool ret = ( ( i <=> j) < 0 );  // change the '== 0' part so that the output is 1   
+  bool ret = ( ( i <=> j) == 0 );  // change the '== 0' part so that the output is 1   
  
   std::cout << ret << std::endl;
   return 0;
