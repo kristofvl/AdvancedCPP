@@ -1,4 +1,4 @@
-# AdvancedCPP
+# Advanced Programming in C++
 A collection of lecture slides and code from the Advanced Programming in C++ class. University of Siegen students can log into this [Moodle page](https://moodle.uni-siegen.de/course/view.php?id=34345).
 
 The lecture slides are update here in real-time
