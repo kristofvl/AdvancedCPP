@@ -7,11 +7,11 @@ https://docs.google.com/presentation/d/135ddC7r_z0iJaDsG9pqBxWZ0PFgxYG8ZoBCeQWuA
 Course overview:
 
 [Slide set 01](/Advanced_CPP01.pdf)
-[Assignments set 01](/basic_statements/)
+[Assignments set 01 - basics](/basic_statements/)
 [Video](https://youtu.be/LkWa9RdyPFM)
 
 
 [Slide set 02](/Advanced_CPP02.pdf)
-[Assignments set 02 - functions](/functions/)
-[Assignments set 03 - arrays](/arrays/)
+[Assignments set 02a - functions](/functions/)
+[Assignments set 02b - arrays](/arrays/)
 
