@@ -8,6 +8,8 @@ Course overview:
 
 [Slide set 01](/Advanced_CPP_01.pdf)
 [Assignments set 01](/basic_statements/)
+[Video](https://youtu.be/LkWa9RdyPFM)
+
 
 [Slide set 02](/Advanced_CPP_02.pdf)
 [Assignments set 02 - functions](/functions/)
