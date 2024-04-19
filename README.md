@@ -9,3 +9,7 @@ Course overview:
 [Slide set 01](/Advanced_CPP_01.pdf)
 [Assignments set 01](/basic_statements/)
 
+[Slide set 02](/Advanced_CPP_02.pdf)
+[Assignments set 02 - functions](/functions/)
+[Assignments set 03 - arrays](/arrays/)
+
