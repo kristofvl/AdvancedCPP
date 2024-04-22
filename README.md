@@ -10,8 +10,8 @@ Course overview:
 [Assignments set 01 - basics](/basic_statements/)
 [Video](https://youtu.be/LkWa9RdyPFM)
 
-
 [Slide set 02](/Advanced_CPP02.pdf)
 [Assignments set 02a - functions](/functions/)
 [Assignments set 02b - arrays](/arrays/)
 
+[Slide set 03](/Advanced_CPP02.pdf)
