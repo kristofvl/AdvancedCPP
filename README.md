@@ -15,3 +15,4 @@ Course overview:
 [Assignments set 02b - arrays](/arrays/)
 
 [Slide set 03](/Advanced_CPP03.pdf)
+[Assignments set 03 - classes](/classes/)
