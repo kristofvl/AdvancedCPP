@@ -2,10 +2,10 @@
 #include "Maze.h"  // class definition
 
 // initialize maze data and set up window in ncurses, use color
-Maze::Maze(int16_t x, int16_t y) : x(x), y(y) {
-	// set up the maze data:
-	uint8_t myMaze[mazeYlen][mazeXlen] = {  // maze's walls:
-		{1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0},
+Maze::Maze(int16_t x, int16_t y) {
+  // set up the maze data:
+  uint8_t myMaze[mazeYlen][mazeXlen] = {  // maze's walls:
+    {1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0},
     {0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0},
     {1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0},
     {1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0},
@@ -21,7 +21,7 @@ Maze::Maze(int16_t x, int16_t y) : x(x), y(y) {
       maze[line][col] = myMaze[line][col];  // fill in our maze
   // initialize player position:
   this->x = x; this->y = y;
-	// set up everything for drawing:
+  // set up everything for drawing:
   initscr(); curs_set(0);  // init ncurses window, hide cursor
   noecho();  // don't show keys pressed in terminal
   start_color();  // use color, with these color pairs:
@@ -36,7 +36,7 @@ Maze::~Maze() {
 
 // clear the screen and draw the maze as a background
 void Maze::clearScreen() {
-	for ( auto line = 0; line < LINES; line++) {
+  for ( auto line = 0; line < LINES; line++) {
     for ( auto col = 0; col < COLS; col++) {
       if (maze[line%mazeYlen][col%mazeXlen]) { // 1 = wall
         attron(COLOR_PAIR(1));  // set color pair to 1
@@ -53,7 +53,7 @@ void Maze::clearScreen() {
 
 // (re)draw the maze with player as symbol, in colorpair:
 void Maze::draw(char symbol, int colorpair) {
-	clearScreen();
+  clearScreen();
   attron(COLOR_PAIR(colorpair));  // set color pair to 1
   mvaddch(y, x, symbol);  // draw player at (x,y)
   attroff(COLOR_PAIR(colorpair));
