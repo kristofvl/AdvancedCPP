@@ -13,6 +13,7 @@ Course overview:
 [Slide set 02](/Advanced_CPP02.pdf)
 [Assignments set 02a - functions](/functions/)
 [Assignments set 02b - arrays](/arrays/)
+[Video](https://youtu.be/sny1jehjS4E)
 
 [Slide set 03](/Advanced_CPP03.pdf)
 [Assignments set 03 - classes](/classes/)
