@@ -61,12 +61,12 @@ int GPSTrace::print() {  // output trace to console
 //--- This program creates a trace of 5 points ---------------------
 // extend it to illustrate copying a GPSTrace object:
 int main() {
-	GPSTrace t(5);
+  GPSTrace t(5);
   for (auto i = 0; i < 5; i++ ) {  // fill in the points
     GPSCoord point;
-	  point.set(i*1.2, i*3.4);
-	  point.setElevation(i*5.6);
+    point.set(i*1.2, i*3.4);
+    point.setElevation(i*5.6);
     t.setPoint(point, i);
   }
-	return t.print();
+  return t.print();
 }
