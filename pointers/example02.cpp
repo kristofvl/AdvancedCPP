@@ -11,7 +11,7 @@ class GPSCoord {  // GPS coordinate class
   GPSCoord(GPSCoord const &source);  // copy constructor
   void set(double lat, double lng);  // set latitude, longitude
   void setElevation(double elv);     // set elevation
-  void print();  // output coordinates to console
+  void print() const;  // output coordinates to console
  private:
   double lat, lng, elv;  // latitude, longitude, elevation
 };
@@ -25,7 +25,7 @@ void GPSCoord::set(double lat, double lng) {
 void GPSCoord::setElevation(double elv) {
   this->elv = elv;
 }
-void GPSCoord::print() {
+void GPSCoord::print() const {
   std::cout << "Lat:" << lat << " Lng:" << lng;
   std::cout << " Elv:" << elv << "\n";
 }
@@ -38,7 +38,7 @@ class GPSTrace {  // class for a GPS trace
   ~GPSTrace();
   // add a new point to trace at position pos:
   void setPoint(GPSCoord newPoint, uint16_t pos);  // set a GPSCoord
-  int print();  // print entire trace
+  int print() const;  // print entire trace
  private:
   GPSCoord *points;  // pointer to GPS coordinates
   uint16_t numPoints;
@@ -53,7 +53,7 @@ GPSTrace::~GPSTrace() {
 void GPSTrace::setPoint(GPSCoord newPoint, uint16_t pos) {
   if (pos < numPoints) points[pos] = newPoint;
 }
-int GPSTrace::print() {  // output trace to console
+int GPSTrace::print() const {  // output trace to console
   for (auto i = 0; i < numPoints; i++) points[i].print();
   return 0;
 }
