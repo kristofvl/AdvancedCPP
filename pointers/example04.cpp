@@ -17,9 +17,9 @@ class NumberSequence {  // class for sequence of whole, positive numbers
 uint16_t times2(uint16_t n) { return n*2; }
 
 int main() {
-	NumberSequence s;
-	s.print();
-	s.forEach( &times2 ); // apply the function times2 to all numbers
-	s.print();
-	return 0;
+  NumberSequence s;
+  s.print();
+  s.forEach( &times2 ); // apply the function times2 to all numbers
+  s.print();
+  return 0;
 }
