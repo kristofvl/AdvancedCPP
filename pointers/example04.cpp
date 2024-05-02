@@ -1,6 +1,7 @@
 /** Define the class' methods below so that the main function makes sense */
 #include <iostream>     // terminal output
 #include <functional>     // use std::function to pass functions as parameter
+
 class NumberSequence {  // class for sequence of whole, positive numbers 
  public:
   NumberSequence(uint16_t length = 10); 
