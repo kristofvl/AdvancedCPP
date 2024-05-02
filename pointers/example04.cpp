@@ -1,10 +1,11 @@
 /** Define the class' methods below so that the main function makes sense */
 #include <iostream>     // terminal output
-
+#include <functional>     // use std::function to pass functions as parameter
 class NumberSequence {  // class for sequence of whole, positive numbers 
  public:
   NumberSequence(uint16_t length = 10); 
-  void forEach(uint16_t (*func)(uint16_t));  // apply func to all numbers
+  // apply the function func() to all numbers:
+  void forEach(std::function<uint16_t(uint16_t)> func);  
   void print() const;  // print all numbers to console
  private: 
   const uint16_t length;  // length of number sequence 
