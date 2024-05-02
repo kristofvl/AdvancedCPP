@@ -38,7 +38,7 @@ class GPSTrace {  // class for a GPS trace
   ~GPSTrace();
   // add a new point to trace at position pos:
   void setPoint(GPSCoord newPoint, uint16_t pos);  // set a GPSCoord
-  int print() const;  // print entire trace
+  [[nodiscard]] int print() const;  // print entire trace
  private:
   GPSCoord *points;  // pointer to GPS coordinates
   uint16_t numPoints;
