@@ -1,6 +1,6 @@
 /** Print a mouse in the console, using a const pointer to avoid changes */
 #include <iostream>     // terminal output
-auto *getBitmapAddress() {
+[[nodiscard]] auto *getBitmapAddress() {
   static char bitmap[] = "(^._.^)~";  // "bitmap" created in static memory
   return bitmap;  // return pointer to first element
 }
