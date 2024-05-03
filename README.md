@@ -21,4 +21,6 @@ Course overview:
 
 [Slide set 04](/Advanced_CPP04.pdf)
 [Assignments set 04 - pointers](/pointers/)
+[Video](https://youtu.be/gYD7SvXS6eY)
+
 
