@@ -23,4 +23,10 @@ Course overview:
 [Assignments set 04 - pointers](/pointers/)
 [Video](https://youtu.be/gYD7SvXS6eY)
 
+[Slide set 05](/Advanced_CPP05.pdf)
+[Assignments set 05a - inheritance](/inheritance/)
+[Assignments set 05b - polymorphism](/polymorphism/)
+
+
+
 
