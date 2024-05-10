@@ -5,7 +5,7 @@
 
 // write the class Check here
 
-int main(int argc, char *argv[]) {
+int main() {
   Check a;  // a is an object of class Check
   Check *b = &a;  // assign address of a to pointer b to object of class Check
   if ( b->isThisMe( &a ) ) {
