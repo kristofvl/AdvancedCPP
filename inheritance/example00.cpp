@@ -5,7 +5,7 @@ class Rectangle {  // class Rectangle has width and height as attributes and are
   Rectangle() {}  // default constructor, allows to define width and height later
   Rectangle(int x, int y): width(x), height(y) {}  // constructor that sets attributes
   int area() { return width*height; };
-  // declare the friend method "enlarge()" here, with as parameter a rectangle  
+  // declare the friend method "enlarge()" here, with a rectangle as parameter, returning a rectangle
  private:
   int width, height;  // width and height are private, so not accessible from outside the class 
 };
