@@ -1,13 +1,13 @@
 #include <iostream> 
 
 class Rectangle {  // class Rectangle has width and height as attributes and area() as a method  
- private:
-  int width, height;  // width and height are private, so not accessible from outside the class 
  public:
   Rectangle() {}  // default constructor, allows to define width and height later
   Rectangle(int x, int y): width(x), height(y) {}  // constructor that sets attributes
   int area() { return width*height; };
   // declare the friend method "enlarge()" here, with as parameter a rectangle  
+ private:
+  int width, height;  // width and height are private, so not accessible from outside the class 
 };
 
 /* define the friend method here, so that it creates and returns a copy of the rectangle that 
