@@ -1,22 +1,21 @@
 #include <iostream> 
-
-class Rectangle {  // class Rectangle has width and height as attributes and area() as a method  
- public:
-  Rectangle() {}  // default constructor, allows to define width and height later
-  Rectangle(int x, int y): width(x), height(y) {}  // constructor that sets attributes
-  int area() { return width*height; };
-  // declare the friend method "enlarge()" here, with a rectangle as parameter, returning a rectangle
- private:
-  int width, height;  // width and height are private, so not accessible from outside the class 
+class Book {  // a Book object always has a title and a price.   
+ // change this class so that the title cannot be changed, and the price can be changed by Magazine:
+  Book(std::string name, double val) : title(name), price(val) {}
+  void show() { std::cout << title << " - " << price << "\n"; }
+  std::string title;
+  double price; 
 };
 
-/* define the friend method here, so that it creates and returns a copy of the rectangle that 
-   has twice the width and height. The friend method has access to the private attributes. */
+class Magazine {  // a Magazine object uses the Book's constructor, and can apply a discount
+  // change this class so that an object is created through Book's constructor
+  void discount(double percent); 
+};
+// implement Magazine's discount method here
 
 int main() {
-  Rectangle rectangle1, rectangle2(3,4);  // rectangle1 will obtain twice the width and height
-  rectangle1 = enlarge(rectange2);        // of rectangle2 through the enlarge method
-  std::cout << rectangle1.area() << "\n";  // this should return "48" (6 times 8)
+  Magazine mag(std::string("C++ Monthly"), 10.0);
+  mag.show(); mag.discount(25.0);  // this should show 10 in the console, then we apply a 25 % discount
+  mag.show();  // this should now show 7.5
   return 0;  
 }
-
