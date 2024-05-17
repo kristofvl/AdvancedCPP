@@ -10,8 +10,8 @@ int main() {
   Player player2(20, 7);
   while ( c != 'q' ) {  // as long as the user doesn't press q ..
     maze.draw('#', 2);    // draw maze
-    player1.draw('@', 3);    // draw player as a '@' with color pair 3
-    player2.draw('X', 3);
+    player1.draw('@', 3);  // draw player 1 as a '@' with color pair 3
+    player2.draw('X', 3);  // draw player 2 as a 'X' with color pair 3
     c = getch();          // capture the user's pressed key
     switch (c) {
       case 'w': player1.up(maze); break;  // go up
