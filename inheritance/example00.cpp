@@ -7,7 +7,7 @@ class Book {  // a Book object always has a title and a price.
   double price; 
 };
 
-class Magazine {  // a Magazine object uses the Book's constructor, and can apply a discount
+class Magazine : public Book {  // a Magazine object uses the Book's constructor, and can apply a discount
   // change this class so that an object is created through Book's constructor
   void discount(double percent); 
 };
