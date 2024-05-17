@@ -9,7 +9,7 @@ Player::Player(int16_t x, int16_t y) {
 }
 
 // draw the player as symbol, in colorpair:
-void Player::draw(char symbol, int colorpair) {
+void Player::draw(char symbol, int colorpair) const {
 	attron(COLOR_PAIR(colorpair));  // set color pair to 1
   mvaddch(y, x, symbol);  // draw player at (x,y)
   attroff(COLOR_PAIR(colorpair));
