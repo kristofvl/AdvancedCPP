@@ -10,7 +10,7 @@ class Maze {
   Maze(std::string mazeFile);  // set up and draw maze from mazeFile
   ~Maze();  // cleans up ncurses window
   // (re)draw the maze with walls as symbol, in colorpair:
-  void draw(char symbol, int colorpair);
+  void draw(char symbol, int colorpair) const;
   // return the contents of the maze at position (x,y)
   uint8_t get(uint16_t x, uint16_t y) const { return maze[(y%mazeYlen)*mazeXlen+(x%mazeXlen)]; }
 
