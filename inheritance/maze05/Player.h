@@ -9,7 +9,7 @@ class Player {
  public:
   Player(int16_t x, int16_t y);  // set up and draw player at (x,y)
   // (re)draw the player as symbol, in colorpair:
-  void draw(char symbol, int colorpair);
+  void draw(char symbol, int colorpair) const;
   // methods to move the player around in the maze:
   inline void up(const Maze &maze) { if (!maze.get(x, y-1) && y>0) y--;  };
   inline void down(const Maze &maze) { if (!maze.get(x, y+1) && y<LINES-1) y++; };
