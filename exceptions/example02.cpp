@@ -11,5 +11,5 @@ class Subclass : public Superclass {
                   catch (int) { std::cerr << "Oops, my bad."; throw; }
 };
 int main() {    // … instead of here
-  try { Subclass sub(-5); } catch (int) { std::cout << "Oops, my bad.\n"; }  return 0;
+  try { Subclass sub(-5); } catch (int) { std::cerr << "Oops, my bad.\n"; }  return 0;
 }
