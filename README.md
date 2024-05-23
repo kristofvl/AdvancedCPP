@@ -30,7 +30,8 @@ Course overview:
 
 [Slide set 06](/Advanced_CPP06.pdf)
 [Assignments set 06a - exceptions](/exceptions/)
-[Assignments set 05b - containers](/containers/)
+[Assignments set 06b - streams](/streams/)
+[Assignments set 06c - containers](/containers/)
 [Video](https://youtu.be/)
 
 
