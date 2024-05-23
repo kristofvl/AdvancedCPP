@@ -8,7 +8,7 @@ class Queue {  // Class for a queue of integers
   int get();
   bool isFull() const { return filled == maxSize; }
   bool isEmpty() const { return filled == 0; }
-  void clear() { filled = 0; head = 0; tail = 0; }
+  void clear() { filled = 0; head = 0; tail = 0; }  // clear whole queue
  private:
   int *items;    // array of integers
   int maxSize;   // size of items
@@ -17,7 +17,10 @@ class Queue {  // Class for a queue of integers
   int filled;    // number of elements in queue
 };
 
-void Queue::put(int data) {
+// put element at the tail of the queue, for example put(17) updates:
+// items:  [  ][  ][  ][  ][  ][17][  ] … [  ][  ]
+//             head            tail→
+void Queue::put(int data) {   // put element at tail
   if (!isFull()) {
     items[tail] = data;
     tail = (tail+1) % maxSize;
@@ -27,7 +30,10 @@ void Queue::put(int data) {
   }
 }
 
-int Queue::get() {
+// gets element at the head of the queue, for example get() updates:
+// items:  [  ][  ][  ][  ][  ][  ][  ] … [  ][  ]
+//             head→           tail
+int Queue::get() {  // get and remove element from head
   int retval;
   if (!isEmpty()) {
     retval = items[head];
@@ -44,5 +50,5 @@ int main() {
   for (auto i = 0; i < 128; i++) {
     q.put(i);
   }
-	return 0;
+  return 0;
 }
