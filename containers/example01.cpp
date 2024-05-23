@@ -35,7 +35,7 @@ bool UQueue::isEmpty() const {  // check whether the queue is empty
   return head == nullptr;
 }
 
-void UQueue::put(int data) {  // put in new data element
+void UQueue::put(int data) {  // put in new data element at tail
   QueueElement *node = new QueueElement(data);
   if (isEmpty()) {
     head = tail = node;
@@ -44,7 +44,7 @@ void UQueue::put(int data) {  // put in new data element
   }
 }
 
-int UQueue::get() {  // get in new data element
+int UQueue::get() {  // get and remove element from head
   int retVal;
   if (!isEmpty()) {
     retVal = head->data;
@@ -58,13 +58,13 @@ int UQueue::get() {  // get in new data element
 }
 
 int main() {
-	UQueue q;
-	for (auto i = 0; i < 128; i++) {
+  UQueue q;
+  for (auto i = 0; i < 128; i++) {
     q.put(i);
   }
   for (auto i = 0; i < 129; i++) {
     std::cout << q.get() << " ";
   }
   std::cout << "\n";
-	return 0;
+  return 0;
 }
