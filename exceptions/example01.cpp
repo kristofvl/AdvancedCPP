@@ -1,3 +1,4 @@
+// requires C++11 or later
 #include <iostream>  // std::cout, std::runtime_error, std::exception, std::cerr
 class MyException : public std::exception {
  public:
