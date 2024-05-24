@@ -1,3 +1,4 @@
+// requires C++11 or later
 #include <iostream>  // use of std::cout, std::cin
 int divBy(int a, int b) {  // divBy could throw exceptions (noexcept omitted)
   if (b == 0)
