@@ -32,7 +32,7 @@ Course overview:
 [Assignments set 06a - exceptions](/exceptions/)
 [Assignments set 06b - streams](/streams/)
 [Assignments set 06c - containers](/containers/)
-[Video](https://youtu.be/)
+[Video](https://youtu.be/a8Xp95IHwcQ)
 
 
 
