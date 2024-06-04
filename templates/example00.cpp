@@ -1,10 +1,8 @@
-// Implementation of the Queue from chapter 10 with template
-
 #include <iostream>  // use of std::cout, std::cin
 
 template <class Data> class Queue {  // Class for a queue of integers
  public:
-  Queue(int size = 100) : maxSize(size), tail(0), head(0), filled(0) { items = new int[size]; }
+  Queue(int size = 100) : maxSize(size), tail(0), head(0), filled(0) { items = new Data[size]; }
   ~Queue() { delete[] items; items = nullptr; };
   void put(Data data);
   Data get();
@@ -49,13 +47,17 @@ Data Queue<Data>::get() {  // get and remove element from head
   return retval;
 }
 
-int main() {
-  Queue<int> q(127);
-  for (auto i = 0; i < 127; i++) {
-    q.put(i);
+int main() {  
+  Queue<int> intQueue(127); 
+  Queue<char> charQueue(21);
+
+  // fill int and char data in both queues:
+  for (auto i = 1; i <= 9; i++)  intQueue.put(i);
+  for (auto i = '1'; i <= '9'; i++)  charQueue.put(i);
+
+  // get earliest data from both queues nine times:
+  for (auto i = 0; i < 9; i++) {
+    std::cout << intQueue.get() << ' ' << charQueue.get() << '\n';
   }
-  for (auto i = 0; i < 127; i++) {
-    std::cout << q.get() << " ";
-  }
-  return 0;
+  return retval;
 }
