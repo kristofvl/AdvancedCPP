@@ -64,13 +64,16 @@ Data UQueue<Data>::get() {  // get and remove element from head
 }
 
 int main() {
-  UQueue<int> q;
-  for (auto i = 0; i < 128; i++) {
-    q.put(i);
+  UQueue<int> intQueue(127); 
+  UQueue<char> charQueue(21);
+
+  // fill int and char data in both queues:
+  for (auto i = 1; i <= 9; i++)  intQueue.put(i);
+  for (auto i = '1'; i <= '9'; i++)  charQueue.put(i);
+
+  // get earliest data from both queues nine times:
+  for (auto i = 0; i < 9; i++) {
+    std::cout << intQueue.get() << ' ' << charQueue.get() << '\n';
   }
-  for (auto i = 0; i < 129; i++) {
-    std::cout << q.get() << " ";
-  }
-  std::cout << "\n";
   return 0;
 }
