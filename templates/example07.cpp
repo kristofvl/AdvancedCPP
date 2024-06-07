@@ -12,7 +12,7 @@ int main() {
   
   name.insert(name.begin()+2, "Tom");
   
-  for (const std::string& i : name)  // use range based for loop
+  for (const std::string& i : name)  // use range based (C++11) for loop
     std::cout << i << '\n';
   
   return 0;
