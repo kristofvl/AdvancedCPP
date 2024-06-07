@@ -34,5 +34,8 @@ Course overview:
 [Assignments set 06c - containers](/containers/)
 [Video](https://youtu.be/a8Xp95IHwcQ)
 
++ [Slide set 067](/Advanced_CPP07.pdf)
+[Assignments set 07 - templates](/templates/)
+[Video](https://youtu.be/)
 
 
