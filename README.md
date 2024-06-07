@@ -36,6 +36,6 @@ Course overview:
 
 + [Slide set 07](/Advanced_CPP07.pdf)
 [Assignments set 07 - templates](/templates/)
-[Video](https://youtu.be/)
+[Video](https://youtu.be/wpwvj_kahHY)
 
 
