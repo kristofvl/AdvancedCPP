@@ -17,7 +17,7 @@ class Dog : public Animal {  // Dogs inherit species from Animal and have a name
  public:
   Dog(std::string name) : Animal("dog"), _name(name) {}
  private:
-  std::string getSound() const { return "I am " + _name + ". Bark!"; }
+  std::string getSound() const override { return "I am " + _name + ". Bark!"; }
 };
 
 class Fish : public Animal {  // Fishes have species and subspecies
@@ -26,7 +26,7 @@ class Fish : public Animal {  // Fishes have species and subspecies
  public:
   Fish(std::string subspecies) : Animal("fish"), _subspecies(subspecies) {}
  private:
-  std::string getSound() const { return "I'm " + _subspecies + " (fish)"; }
+  std::string getSound() const override { return "I'm " + _subspecies + " (fish)"; }
 };
 
 int main() {
