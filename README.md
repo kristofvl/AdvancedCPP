@@ -38,4 +38,9 @@ Course overview:
 [Assignments set 07 - templates](/templates/)
 [Video](https://youtu.be/wpwvj_kahHY)
 
++ [Slide set 08](/Advanced_CPP08.pdf)
+[Assignments set 08a - abstract](/abstract/)
+[Assignments set 08b - enum](/enum/)
+[Video](https://youtu.be/wpwvj_kahHY)
+
 
