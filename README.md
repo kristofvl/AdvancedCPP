@@ -42,5 +42,9 @@ Course overview:
 [Assignments set 08b - enum](/enum/)
 [Video](https://youtu.be/5OUj9jzykOI)
 
++ [Slide set 09](/Advanced_CPP09.pdf)
+[Assignments set 09 - performance](/performance/)
+[Video](https://youtu.be/)
+
 
 
