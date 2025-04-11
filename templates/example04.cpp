@@ -6,7 +6,7 @@
 class Fraction {  //
  public:
   Fraction(int n, int d) : n(n), d(d) {}
-  operator double() const { return double(n)/double(d); }
+  double operator double() const { return double(n)/double(d); }
  private:
   int n, d;
 };

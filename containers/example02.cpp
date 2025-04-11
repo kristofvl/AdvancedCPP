@@ -1,5 +1,3 @@
-// implementation of UQueue from chapter 10 with templates
-
 #include <iostream>  // std::cout, std::runtime_error, std::exception, std::cerr
 
 template <class Data> class QueueElement;  // declaration of the element class
@@ -21,8 +19,10 @@ template <class Data> class QueueElement {  // element class, hidden from users
  public:
   QueueElement(Data data) : data(data) , next(nullptr) {}
   Data data;
-  QueueElement<Data> * next;
+  QueueElement * next;
 };
+
+/*********************************************/
 
 template <class Data>
 void UQueue<Data>::clear() {  // iteratively clear the queue of all elements
@@ -64,16 +64,13 @@ Data UQueue<Data>::get() {  // get and remove element from head
 }
 
 int main() {
-  UQueue<int> intQueue;
-  UQueue<char> charQueue;
-
-  // fill int and char data in both queues:
-  for (auto i = 1; i <= 9; i++)  intQueue.put(i);
-  for (auto i = '1'; i <= '9'; i++)  charQueue.put(i);
-
-  // get earliest data from both queues nine times:
-  for (auto i = 0; i < 9; i++) {
-    std::cout << intQueue.get() << ' ' << charQueue.get() << '\n';
+  UQueue<int> q;
+  for (auto i = 0; i < 128; i++) {
+    q.put(i);
   }
+  for (auto i = 0; i < 129; i++) {
+    std::cout << q.get() << " ";
+  }
+  std::cout << "\n";
   return 0;
 }
