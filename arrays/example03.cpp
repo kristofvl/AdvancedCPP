@@ -12,7 +12,7 @@ int main() {
     
     // draw here with std::cout and std::endl
     
-    std::cout << myArray[i] << std::endl;
+    std::cout << myArray[i] << '\n';
   }
   return 0;
 }

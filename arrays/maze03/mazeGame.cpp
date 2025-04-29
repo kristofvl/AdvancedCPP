@@ -33,5 +33,4 @@ int main() {
     }
   }
   endwin();          // ncurses function: close the ncurses window
-  return 0;
 }
