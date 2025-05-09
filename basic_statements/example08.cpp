@@ -14,7 +14,20 @@
 #include <iostream>  // to allow use of std::cout and std::endl
 int main( ) {
 
+  auto size = 15;
 
+  auto n = size - 1;
+
+  for (auto y = 0; y <= n; y++) {
+    for (auto x = 0; x <= n; x++) {
+      if ( (x == 0) || (x == n) || (x == y) ) {
+        std::cout << '0';
+      } else {
+   	  std::cout << ' ';
+      }
+    }
+    std::cout << '\n';
+  }
 
   return 0;
 }

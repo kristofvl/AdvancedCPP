@@ -10,5 +10,4 @@
 int main() {
   // create a class object here
 
-  return 0;
 }

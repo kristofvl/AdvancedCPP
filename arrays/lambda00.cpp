@@ -10,4 +10,5 @@ int main() {
   swap();
   std::cout << "a = " << a << '\n';
   std::cout << "b = " << b << '\n';
+
 }
