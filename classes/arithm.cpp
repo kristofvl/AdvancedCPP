@@ -12,7 +12,7 @@ int main() {
   std::cout << " sub: " << std::get<1>(arith) << '\n';
   std::cout << " mul: " << std::get<2>(arith) << '\n';
   std::cout << " div: " << std::get<3>(arith) << '\n';
-  // .. or through decomposition declarations:
+  // .. or through structured bindings:
   auto [add, sub, mul, div] = arith;
   std::cout << " add: " << add << '\n';
   std::cout << " sub: " << sub << '\n';
