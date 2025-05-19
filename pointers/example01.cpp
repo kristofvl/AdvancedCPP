@@ -11,5 +11,4 @@ int main() {
   if ( b->isThisMe( &a ) ) {
     std::cout << "&a is b \n";
   }
-  return 0;
 }

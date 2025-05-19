@@ -8,11 +8,10 @@
 int main(int argc, char *argv[]) {
   // if an argument given, assume it is a number and convert from string:
   if (argc > 1) {
-    int size = std::stoi(argv[1]);  
+    auto size = std::stoi(argv[1]);
 
     // add code to create an array of length size, and fill it with increasing
     // numbers from 1 till size, display these, and then delete the array 
 
   }
-  return 0;
 }
