@@ -16,7 +16,7 @@ Course overview:
 
 + [Slide set 03](/Advanced_CPP03.pdf)
 [Assignments set 03 - classes](/classes/)
-[Video](https://youtu.be/Hv2SzfJPON8)
+[Video](https://youtu.be/Hv2SzfJPON8) [Video2](https://youtu.be/2KjQd4knbwc)
 
 + [Slide set 04](/Advanced_CPP04.pdf)
 [Assignments set 04 - pointers](/pointers/)
