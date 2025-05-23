@@ -3,6 +3,7 @@
     in the main function below. */
 
 #include <iostream>  // for writing to the console
+#include <span>
 
 //--- GPSTrace uses this class for single GPS coordinates: ---------
 class GPSCoord {  // GPS coordinate class
@@ -18,13 +19,16 @@ class GPSCoord {  // GPS coordinate class
 
 GPSCoord::GPSCoord(GPSCoord const &source) {  // copy constructor
   lat = source.lat; lng = source.lng; elv = source.elv;
-  }
+}
+
 void GPSCoord::set(double lat, double lng) {
   this->lat = lat; this->lng = lng;
 }
+
 void GPSCoord::setElevation(double elv) {
   this->elv = elv;
 }
+
 void GPSCoord::print() const {
   std::cout << "Lat:" << lat << " Lng:" << lng;
   std::cout << " Elv:" << elv << "\n";

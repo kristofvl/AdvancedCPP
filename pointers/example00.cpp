@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     auto size = std::stoi(argv[1]);
 
     // add code to create an array of length size, and fill it with increasing
-    // numbers from 1 till size, display these, and then delete the array 
+    // numbers from 1 till size, display these, and then delete the array
 
   }
 }

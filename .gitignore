@@ -6,3 +6,8 @@ exceptions/a.out.dSYM/Contents/Info.plist
 exceptions/a.out.dSYM/Contents/Resources/Relocations/x86_64/a.out.yml
 streams/myTest.html
 functions/bluetooth_solution.cpp
+pointers/test2.cpp
+pointers/test3.cpp
+classes/assign01.cpp
+classes/assign02.cpp
+classes/assign03.cpp
