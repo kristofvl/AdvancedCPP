@@ -22,6 +22,5 @@ class Square : public Rectangle {  // class representing a square
 int main() {
   Square s(5, 7, 12);  // s is a square at position (5,7) with width 12
   s.print();  // change the code above so this method prints out s' location: "5,7"
-	return 0;
 }
 
