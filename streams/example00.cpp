@@ -9,8 +9,7 @@ int main() {
   outputFile << "Reply of server:\n";
   char reply[bufferSize];
   socket << "GET / HTTP/1.1\r\nHost: www.example.com\r\nConnection: Close\r\n\r\n";
-  socket << std::flush; 
+  socket << std::flush;
   socket.read(reply, bufferSize);
   outputFile << reply;  // output the reply of server to our text file
-  return 0;  
 }
