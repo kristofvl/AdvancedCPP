@@ -28,22 +28,25 @@ Course overview:
 [Video](https://youtu.be/ebijwfUZFIU)
 
 + [Slide set 06](/Advanced_CPP06.pdf)
-[Assignments set 06a - exceptions](/exceptions/)
-[Assignments set 06b - streams](/streams/)
-[Assignments set 06c - containers](/containers/)
+[Assignments set 06 - exceptions](/exceptions/)
 [Video](https://youtu.be/a8Xp95IHwcQ)
 
 + [Slide set 07](/Advanced_CPP07.pdf)
-[Assignments set 07 - templates](/templates/)
-[Video](https://youtu.be/wpwvj_kahHY)
+[Assignments set 07a - streams](/streams/)
+[Assignments set 07b - containers](/containers/)
+[Video](https://youtu.be/a8Xp95IHwcQ)
 
 + [Slide set 08](/Advanced_CPP08.pdf)
-[Assignments set 08a - abstract](/abstract/)
-[Assignments set 08b - enum](/enum/)
-[Video](https://youtu.be/5OUj9jzykOI)
+[Assignments set 08 - templates](/templates/)
+[Video](https://youtu.be/wpwvj_kahHY)
 
 + [Slide set 09](/Advanced_CPP09.pdf)
-[Assignments set 09 - performance](/performance/)
+[Assignments set 09a - abstract](/abstract/)
+[Assignments set 09b - enum](/enum/)
+[Video](https://youtu.be/5OUj9jzykOI)
+
++ [Slide set 10](/Advanced_CPP10.pdf)
+[Assignments set 10 - performance](/performance/)
 [Video](https://youtu.be/)
 
 
