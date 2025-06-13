@@ -52,5 +52,4 @@ int main() {
   for (auto i = 0; i < 127; i++) {
     q.put(i);
   }
-  return 0;
 }

@@ -68,9 +68,6 @@ int main() {
   for (auto i = 0; i < 128; i++) {
     q.put(i);
   }
-  for (auto i = 0; i < 129; i++) {
-    std::cout << q.get() << " ";
-  }
-  std::cout << "\n";
-  return 0;
+  try { while (true) std::cout << q.get() << " "; }
+  catch (...) { std::cout << "\n"; }
 }
