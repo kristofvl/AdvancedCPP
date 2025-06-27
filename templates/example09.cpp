@@ -1,3 +1,5 @@
+// Example for transform from 2 vectors to a third, compile with --std=c++17
+
 #include <iostream>
 #include <vector>
 
@@ -12,8 +14,7 @@ int main() {
          // [=] : capture all external variables (n) in lambda by value
          // [&] : capture all external variables (n) in lambda by reference
   for (const double & i : c) {
-    std::cout << i << "\n";
+    std::cout << i << '\n';
   }
-  return 0;
 }
 

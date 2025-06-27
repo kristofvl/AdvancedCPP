@@ -4,7 +4,7 @@
 #include <iostream>
 
 class Complex;
-Complex operator + ( Complex& cn1, const Complex& cn2);
+Complex operator + (const Complex& cn1, const Complex& cn2);
 
 class Complex {  // Class representing a complex number, e.g. 2.3 + 4.5 i
  protected:
@@ -13,10 +13,10 @@ class Complex {  // Class representing a complex number, e.g. 2.3 + 4.5 i
   Complex() : real(0), imag(0) {}
   Complex(double real, double imag) : real(real), imag(imag){}
   void display() { std::cout << real << " " << imag << '\n'; }
-  friend Complex operator + ( Complex& cn1, const Complex& cn2);
+  friend Complex operator + (const Complex& cn1, const Complex& cn2);
 };
 
-Complex operator + ( Complex& cn1, const Complex& cn2) {
+Complex operator + (const Complex& cn1, const Complex& cn2) {
   Complex temp;
   temp.real = cn1.real + cn2.real;
   temp.imag = cn1.imag + cn2.imag;
