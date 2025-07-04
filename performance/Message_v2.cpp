@@ -79,15 +79,14 @@ int main() {
   std::cout << "--- s2: ---\n";
   Message s2(s1);       // s2's copy constructor from s1: lvalue
   std::cout << "--- s3: ---\n";
-  Message s3(s1+s2);    // s3's copy constructor from s1+s2: rvalue?
+  Message s3(s1+s2);    // s3's constructor from s1+s2: rvalue
   std::cout << "--- s4: ---\n";
   Message s4 = s1;      // s4 is copy-constructed here by the compiler
   std::cout << "--- s5: ---\n";
   Message s5("pong!");  // s5 is constructed here
   s5 = s2;              // s5 is assigned here
   std::cout << "--- s6: ---\n";
-  Message s6("");       // s6
-  s6 = std::move(s2);   // s6 is move constructed here
+  Message s6 = std::move(s2);   // s6 is move constructed here
 
   s1.show(); s2.show(); s3.show(); s4.show(); s5.show(); s6.show();
 }

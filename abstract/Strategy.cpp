@@ -1,7 +1,6 @@
 /** Example of the Strategy Pattern, which defines encapsulated algorithms
     (strategies) to make them interchangeable. Strategy lets the algorithm
     vary independently from the clients that use it.
-
     */
 
 #include <iostream>

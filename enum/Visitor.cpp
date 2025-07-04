@@ -25,6 +25,7 @@ void handleEvent( const Event & event ) {
       } else std::cout << "Unknown event.";
       std::cout << '\n';
     }, event);
+  // find out the type of event e (ClickEvent, Key Event, ResizeEvent):
   // - auto && e is a 'forwarding reference', which means:
   //   "bind e to whatever type and value category is passed"
   // - std::decay<T> is a type trait that transforms a type T into
@@ -34,7 +35,7 @@ void handleEvent( const Event & event ) {
 }
 
 int main() {
-  // Create different events, and afterwards handle them through the Visitor:
-  Event e[] = { ClickEvent{10, 20}, KeyEvent{'A'}, ResizeEvent{800, 600} };
+  // Create different events, and afterwards handle them through Visitor:
+  Event e[] = { ClickEvent{10,20}, KeyEvent{'A'}, ResizeEvent{800,600} };
   for (auto event : e) handleEvent(event);
 }
