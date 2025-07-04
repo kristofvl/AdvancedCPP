@@ -13,7 +13,6 @@ int main() {
   constexpr int y = a1.g(); // ok, same as 'A::g()'
   constexpr A a2;
   constexpr int z = a2.f(); // works
-  return 0 ;
 }
 
 
