@@ -18,5 +18,4 @@ class Example : public MyInterface {
 int main() {
   MyInterface * i = new Example;
   std::cout << i->getFormulaWithX() << "\n";
-  return 0;
 }
