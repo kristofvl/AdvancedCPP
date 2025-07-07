@@ -35,5 +35,5 @@ int main() {
   std::cout << "Distance (non-const): " << p.distanceFrom0() << "\n";  // uses cache
   std::cout << "Distance (non-const, cached): " << p.distanceFrom0() << "\n";  // gets from cache
   const Point cp(6, 8);
-  std::cout << "Distance (const): " << cp.distanceFromOrigin() << "\n";  // always recalculates
+  std::cout << "Distance (const): " << cp.distanceFrom0() << "\n";  // always recalculates
 }
