@@ -1,5 +1,5 @@
 /**
- Write a program that draws in the terminal a big X out of the character 'X',  
+ Write a program that draws in the terminal a big X out of the character 'X',
  depending on the variable int size (with size = 3, 4, ..., 20):
  size = 3:     size = 4:      size = 5:      etc.
    X X          X  X           X   X
@@ -12,5 +12,4 @@ int main( ) {
 
 
 
-  return 0;
 }
