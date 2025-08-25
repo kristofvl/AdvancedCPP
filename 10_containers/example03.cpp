@@ -2,7 +2,7 @@
 
 template <class Data> class Queue {  // Class for a queue of integers
  public:
-  Queue(int size = 100) : maxSize(size), tail(0), head(0), filled(0) { items = new int[size]; }
+  Queue(int size = 100) : maxSize(size), tail(0), head(0), filled(0) { items = new Data[size]; }
   ~Queue() { delete[] items; items = nullptr; };
   void put(Data data);
   Data get();
