@@ -6,7 +6,8 @@ All lecture slides [404 slides, 1.9 MB] are [downloadable here](Advanced_CPP.pdf
 Course overview:
 
 + [Slide set 01](Advanced_CPP01.pdf)
-[Assignments set 01 - basics](03_basic_statements/)
+[Assignments set 01 - designing](01_designing/)
+[Assignments set 03 - basics](03_basic_statements/)
 [Video](https://youtu.be/LkWa9RdyPFM)
 
 + [Slide set 04](Advanced_CPP04.pdf)
