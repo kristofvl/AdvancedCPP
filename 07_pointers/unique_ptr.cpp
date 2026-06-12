@@ -11,11 +11,10 @@ struct Coordinate {
 };
 
 int main() {
-  std::unique_ptr<Coordinate> p1(new Coordinate);
-  std::unique_ptr<int> p2(new int[10]);
+  auto p1 = std::make_unique<Coordinate>();
+  auto p2 = std::make_unique<int[]>(10);
   p1->print();
   std::cout << p2.get() << '\n';  // display pointer's address
   // this would give a compiler error:
   //unique_ptr<Coordinate> p2 = p1;
-
 }
