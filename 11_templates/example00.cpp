@@ -47,8 +47,8 @@ Data Queue<Data>::get() {  // get and remove element from head
   return retval;
 }
 
-int main() {  
-  Queue<int> intQueue(127); 
+int main() {
+  Queue<int> intQueue(127);
   Queue<char> charQueue(21);
 
   // fill int and char data in both queues:
@@ -59,5 +59,4 @@ int main() {
   for (auto i = 0; i < 9; i++) {
     std::cout << intQueue.get() << ' ' << charQueue.get() << '\n';
   }
-  return 0;
 }

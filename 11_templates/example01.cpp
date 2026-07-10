@@ -75,5 +75,4 @@ int main() {
   for (auto i = 0; i < 9; i++) {
     std::cout << intQueue.get() << ' ' << charQueue.get() << '\n';
   }
-  return 0;
 }
